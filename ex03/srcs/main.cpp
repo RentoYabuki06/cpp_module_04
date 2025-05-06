@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:16:41 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 13:18:42 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 15:56:36 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "../includes/MateriaSource.hpp"
 #include "../includes/Ice.hpp"
 #include "../includes/Cure.hpp"
-#include "../includes/Chracter.hpp"
+#include "../includes/Character.hpp"
 #include "../includes/ICharacter.hpp"
 #include "../includes/AMateria.hpp"
 
