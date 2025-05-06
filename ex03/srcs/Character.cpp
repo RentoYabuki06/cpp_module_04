@@ -6,11 +6,11 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:27:27 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:53:01 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 20:13:58 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Character.hpp"
+#include "../includes/Character.hpp"
 
 Character::Character()
 {

@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 14:24:05 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:55:59 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 20:12:31 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 #include "IMateriaSource.hpp"
 
-class MateriaSource
+class MateriaSource : public IMateriaSource
 {
 private:
-	AMateria* _templates[4];
+	static const size_t kMaxSlots = 4;
+	AMateria* _templates[kMaxSlots];
 public:
 	MateriaSource();
 	MateriaSource(const MateriaSource& other);

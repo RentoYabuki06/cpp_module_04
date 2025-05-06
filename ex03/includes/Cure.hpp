@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:29:41 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:53:57 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 20:01:04 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "AMateria.hpp"
 
-class Cure : AMateria
+class Cure : public AMateria
 {
 public:
 	Cure();

@@ -6,11 +6,11 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:22:08 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:55:12 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 20:13:26 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ICharacter.hpp"
+#include "../includes/ICharacter.hpp"
 
 ICharacter::ICharacter()
 {

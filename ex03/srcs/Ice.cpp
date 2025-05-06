@@ -6,11 +6,11 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:30:16 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:54:48 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/06 20:13:36 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Ice.hpp"
+#include "../includes/Ice.hpp"
 
 Ice::Ice() : _type("Ice")
 {
