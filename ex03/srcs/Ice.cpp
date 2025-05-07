@@ -6,23 +6,18 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:30:16 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 20:13:36 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/07 17:24:52 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Ice.hpp"
 
-Ice::Ice() : _type("Ice")
+Ice::Ice() : AMateria("Ice")
 {
 	std::cout << "Ice constructed." << std::endl;
 }
 
-Ice::Ice(std::string const & type) : _type(type)
-{
-	std::cout << "Ice [" << this->getType() << "] constructed." << std::endl;
-}
-
-Ice::Ice(const Ice& other) : _type(other.getType())
+Ice::Ice(const Ice& other) : AMateria(other.getType())
 {
 	std::cout << "Ice [" << this->getType() << "] constructed." << std::endl;
 }
@@ -31,7 +26,7 @@ Ice& Ice::operator=(const Ice& other)
 {
 	if (this != &other)
 	{
-		this->_type = other._type;
+		AMateria::operator=(other);
 	}
 	std::cout << "Ice assigned." << std::endl;
 	return *this;

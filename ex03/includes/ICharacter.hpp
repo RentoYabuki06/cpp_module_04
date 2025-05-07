@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:22:11 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 15:55:01 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/07 17:20:59 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 
 #include "AMateria.hpp"
 #include "string"
+
+class AMateria;
 class ICharacter
 {
-private:
+public:
 	ICharacter();
 	ICharacter(const ICharacter& other);
 	ICharacter& operator=(const ICharacter& other);
-public:
 	virtual ~ICharacter();
 	virtual std::string const & getName() const = 0;
 	virtual void equip(AMateria* m) = 0;
