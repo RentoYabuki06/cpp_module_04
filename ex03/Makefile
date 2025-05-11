@@ -6,13 +6,13 @@
 #    By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/04 12:06:03 by ryabuki           #+#    #+#              #
-#    Updated: 2025/05/11 16:52:38 by ryabuki          ###   ########.fr        #
+#    Updated: 2025/05/11 17:31:27 by ryabuki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = interfaceRecap
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Wshadow
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Wshadow -g
 INCLUDES = -I includes
 
 SRCS =	srcs/main.cpp \

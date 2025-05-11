@@ -6,13 +6,13 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:30:14 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/11 15:25:12 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 17:08:43 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Cure.hpp"
 
-Cure::Cure() : AMateria("Cure")
+Cure::Cure() : AMateria("cure")
 {
 	std::cout << "Cure constructed." << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:27:27 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 20:13:58 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 17:37:26 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ Character::Character(std::string const & name) : _name(name)
 	{
 		_inventory[i] = NULL;
 	}
-	
 }
 
 Character::Character(const Character& other) : _name(other._name)
@@ -53,7 +52,7 @@ Character& Character::operator=(const Character& other)
 Character::~Character()
 {
 	std::cout << "Character destructed." << std::endl;
-	for (size_t i = 0; i < 4; i++)
+	for (int i = 0; i < 4; i++)
 	{
 		delete _inventory[i];
 	}
@@ -66,12 +65,14 @@ std::string const & Character::getName() const
 
 void	Character::equip(AMateria* m)
 {
-	for (size_t i = 0; i < 4; i++)
+	if (!m)
+		return ;
+	for (int i = 0; i < 4; i++)
 	{
 		if(!_inventory[i])
 		{
-			_inventory[i] = m;
-			break;
+			_inventory[i] = m->clone();
+			return;
 		}
 	}
 }
