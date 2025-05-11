@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:30:16 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/07 17:24:52 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 15:22:48 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ Ice::Ice() : AMateria("Ice")
 	std::cout << "Ice constructed." << std::endl;
 }
 
-Ice::Ice(const Ice& other) : AMateria(other.getType())
+Ice::Ice(const Ice& other) : AMateria(other)
 {
-	std::cout << "Ice [" << this->getType() << "] constructed." << std::endl;
+	std::cout << "Ice copy constructed." << std::endl;
 }
 
 Ice& Ice::operator=(const Ice& other)

@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:30:14 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/07 17:24:08 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 15:22:42 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ Cure::Cure() : AMateria("Cure")
 	std::cout << "Cure constructed." << std::endl;
 }
 
-Cure::Cure(const Cure& other) : AMateria(other.getType())
+Cure::Cure(const Cure& other) : AMateria(other)
 {
-	std::cout << "Cure [" << this->getType() << "] constructed." << std::endl;
+	std::cout << "Cure copy constructed." << std::endl;
 }
 
 Cure& Cure::operator=(const Cure& other)
