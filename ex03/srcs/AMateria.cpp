@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:16:36 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/06 20:14:09 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 15:25:03 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ AMateria::AMateria(std::string const & type) : _type(type)
 
 AMateria::AMateria(const AMateria& other) : _type(other.getType())
 {
-	std::cout << "AMateria [" << this->getType() << "] constructed." << std::endl;
+	std::cout << "AMateria copied." << std::endl;
 }
 
 AMateria& AMateria::operator=(const AMateria& other)
