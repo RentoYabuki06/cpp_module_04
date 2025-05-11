@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:16:41 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/11 17:41:47 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 19:16:02 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,13 +67,11 @@ int main()
 	}
 	
 	std::cout << "\n=== Unequip and use test ===" << std::endl;
-	Character* concrete = dynamic_cast<Character*>(alice);
-	AMateria* unequipped = concrete->_inventory[1];
 	alice->unequip(1);
-	delete unequipped;
-
 	alice->use(1, *alice);
-
 	delete alice;
+
+	std::cout << "\n=== Clean up floor ===" << std::endl;
+	Character::cleanupFloor();
 	return 0;
 }

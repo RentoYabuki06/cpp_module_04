@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:27:27 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/11 17:37:26 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/11 19:24:38 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,10 @@ void	Character::equip(AMateria* m)
 
 void	Character::unequip(int idx)
 {
-	if (idx >= 0 && idx < 4)
+	if (idx >= 0 && idx < 4 && _inventory[idx] != NULL)
 	{
+		if (_floorCount < MAX_FLOOR_SIZE)
+			_floor[_floorCount++] = _inventory[idx];
 		_inventory[idx] = NULL;
 	}
 }
@@ -91,4 +93,17 @@ void	Character::use(int idx, ICharacter& target)
 	{
 		_inventory[idx]->use(target);
 	}
+}
+
+AMateria* Character::_floor[Character::MAX_FLOOR_SIZE] = {};
+int Character::_floorCount = 0;
+
+void Character::cleanupFloor()
+{
+	for (int i = 0; i < _floorCount; i++)
+	{
+		delete _floor[i];
+		_floor[i] = NULL;
+	}
+	_floorCount = 0;
 }

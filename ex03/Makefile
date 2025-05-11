@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+         #
+#    By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/04 12:06:03 by ryabuki           #+#    #+#              #
-#    Updated: 2025/05/11 17:31:27 by ryabuki          ###   ########.fr        #
+#    Updated: 2025/05/11 19:19:49 by yabukirento      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = interfaceRecap
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Wshadow -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Wshadow -g -fsanitize=address
 INCLUDES = -I includes
 
 SRCS =	srcs/main.cpp \
