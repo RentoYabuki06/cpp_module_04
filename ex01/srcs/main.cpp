@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 11:24:07 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/05 14:39:17 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/12 09:50:39 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main()
 
 	for (size_t i = 0; i < N / 2; i++)
 		animals[i] = new Dog();
-	for (size_t i = 2 / N; i < N; i++)
+	for (size_t i = N / 2; i < N; i++)
 		animals[i] = new Cat();
 
 	std::cout << "\n=== Deleting animals ===\n" << std::endl;
